@@ -2,6 +2,7 @@ Trusted Multi-View Classification
 ---
 
 ## 🧐 About
+---
 
 An easy-to-run implementation using PyTorch for the paper
 "
@@ -9,6 +10,7 @@ Trust EEG Epileptic Seizure Detection via Evidential Multi-view Learning
 ".
 
 ## 🎈 Usage
+---
 
 **Requirements**
 
