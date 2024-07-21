@@ -1,4 +1,4 @@
-Trusted Multi-View Classification
+Trust EEG Epileptic Seizure Detection via Evidential Multi-view Learning
 ---
 
 ## 🧐 About
