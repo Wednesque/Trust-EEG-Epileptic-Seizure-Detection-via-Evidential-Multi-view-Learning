@@ -1,5 +1,4 @@
 function [ X_1, X_2, X_3]=domain_transform(X)
-% 2019-05-07 XiaobinTian xiaobin9652@163.com
 % 
 % using FFT and WPT to obtain the frequency features 
 % and time-frequency features of the dataset
