@@ -1,5 +1,4 @@
 function [ X, Y ]=load_data(filename)
-% 2019-05-07 XiaobinTian xiaobin9652@163.com
 % 
 % load and preprocessed dataset
 % part of the non-seizure data is abandoned 
