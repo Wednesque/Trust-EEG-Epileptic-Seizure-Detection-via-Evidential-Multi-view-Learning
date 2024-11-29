@@ -1,5 +1,3 @@
-% 2019-05-07 XiaobinTian xiaobin9652@163.com
-% 
 % preprocessed dataset 
 % construction of initial multi-view EEG features
 
