@@ -175,10 +175,6 @@ class EML(nn.Module):
             loss = loss_fusion.mean() + loss_views.mean() + self.delta * loss_G.mean()
         return view_e, fusion_e, loss
 
-
-
-
-
     def get_dc_loss(evidences, device):
         num_views = len(evidences)
         batch_size, num_classes = evidences[0].shape[0], evidences[0].shape[1]
@@ -198,9 +194,6 @@ class EML(nn.Module):
         dc_sum = torch.mean(dc_sum)
         return dc_sum
 
-
-
-'''
     def calculate_vector_distance(self, X, return_square=False):
         ''''''
         Calculate distance between each row vector and each other.
@@ -214,4 +207,3 @@ class EML(nn.Module):
         if return_square:
             return D2
         return torch.sqrt(D2)
-'''
