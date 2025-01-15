@@ -195,12 +195,6 @@ class EML(nn.Module):
         return dc_sum
 
     def calculate_vector_distance(self, X, return_square=False):
-        ''''''
-        Calculate distance between each row vector and each other.
-        return a matrix D with shape n*n where Dij means distance between i and j.
-        Refer to <https://blog.csdn.net/LoveCarpenter/article/details/85048291/#t6> 2.4
-        Attention! DO NOT use sqrt if results need to backward. Because sqrt is not differentiable at x=0.
-        ''''''
         G = X @ X.T  # n*n, gram matrix
         H = torch.diag(G).unsqueeze(0).expand(len(X), -1)  # n*n
         D2 = H + H.T - 2 * G  # n*n
