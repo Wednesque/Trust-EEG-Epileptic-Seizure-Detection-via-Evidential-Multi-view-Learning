@@ -1,4 +1,4 @@
-                                         from pathlib import Path
+from pathlib import Path
 import pickle
 from sklearn.preprocessing import MinMaxScaler
 import scipy.io
@@ -61,9 +61,10 @@ def process_eeg_extrated_cnn_feature(path=BASE_DIR / 'dataset/eeg/data/feature/f
 
 def process_eeg_domain(path=BASE_DIR / 'dataset/eeg/data/domain_feature/train_data1.mat', fold=0, saving_name='dataname'):
     '''
-    X_1: 23个通道时域拼接, 23 * 256 dims
-    X_2: 23个通道频域4~30HZ, 23 * 27 dims
-    X_3: 时-频域, 14 * 256 dims, 2,4,6,...30Hz
+    X_1: Temporal-domain concatenation of 23 channels, 23 * 256 dimensions
+    X_2: Spectral domain (4–30 Hz) of 23 channels, 23 * 27 dimensions
+    X_3: Temporal-spectral domain, 14 * 256 dimensions, 2, 4, 6, ... 30 Hz
+
     '''
     data = scipy.io.loadmat(str(path))
     x = dict()
