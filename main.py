@@ -9,7 +9,7 @@ from models import EML
 
 
 def train(device='cuda' if torch.cuda.is_available() else 'cpu',
-          train_path='dataset/eeg/data/domain_feature/data2_fold0_train.pkl',
+          train_path='dataset/eeg/data/domain_feature/data1_fold0_train.pkl',
           valid_path='dataset/eeg/data/domain_feature/data1_fold0_valid.pkl',
           #   train_path = 'dataset/handwritten_6views_train.pkl',
           #   valid_path = 'dataset/handwritten_6views_test.pkl',
