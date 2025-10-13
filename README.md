@@ -9,7 +9,7 @@ An easy-to-run implementation using PyTorch for the paper
 
 If you have any questions, feel free to contact **zqwenn@stu.xidian.edu.cn** — happy to discuss and exchange ideas!  
 
-If you find this work useful, please consider citing:  
+If you find this work useful, please kindly cite our paper:  
 ```bibtex
 @article{liu2025trust,
   title={Trust EEG epileptic seizure detection via evidential multi-view learning},
