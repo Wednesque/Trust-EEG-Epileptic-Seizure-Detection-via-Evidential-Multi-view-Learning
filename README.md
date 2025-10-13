@@ -9,6 +9,20 @@ An easy-to-run implementation using PyTorch for the paper
 Trust EEG Epileptic Seizure Detection via Evidential Multi-view Learning
 ".
 
+If you have any questions, feel free to contact **zqwenn@stu.xidian.edu.cn** — happy to discuss and exchange ideas!  
+
+If you find this work useful, please consider citing:  
+```bibtex
+@article{liu2025trust,
+  title={Trust EEG epileptic seizure detection via evidential multi-view learning},
+  author={Liu, Ying and Xu, Cai and Wen, Ziqi and Dong, Yansong},
+  journal={Information Sciences},
+  volume={694},
+  pages={121699},
+  year={2025},
+  publisher={Elsevier}
+}
+
 ## 🎈 Usage
 ---
 
