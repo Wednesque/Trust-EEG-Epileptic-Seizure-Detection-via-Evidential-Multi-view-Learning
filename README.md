@@ -1,53 +1,62 @@
-Trust EEG Epileptic Seizure Detection via Evidential Multi-view Learning
----
+🌟 Beyond Equal Views: Strength-Adaptive Evidential Multi-View Learning
+🧐 About
 
-## 🧐 About
----
+An easy-to-run PyTorch implementation for our paper
+"Beyond Equal Views: Strength-Adaptive Evidential Multi-View Learning" (ACM MM 2025)
 
-An easy-to-run implementation using PyTorch for the paper
-**"Trust EEG Epileptic Seizure Detection via Evidential Multi-view Learning"**  
+If you have any questions, feel free to contact zqwenn@stu.xidian.edu.cn
+ — happy to discuss and exchange ideas!
 
-If you have any questions, feel free to contact **zqwenn@stu.xidian.edu.cn** — happy to discuss and exchange ideas!  
+If you find this work useful, please kindly cite our paper:
 
-If you find this work useful, please kindly cite our paper:  
-```bibtex
-@article{liu2025trust,
-  title={Trust EEG epileptic seizure detection via evidential multi-view learning},
-  author={Liu, Ying and Xu, Cai and Wen, Ziqi and Dong, Yansong},
-  journal={Information Sciences},
-  volume={694},
-  pages={121699},
+@inproceedings{xu2025beyond,
+  title={Beyond Equal Views: Strength-Adaptive Evidential Multi-View Learning},
+  author={Xu, Cai and Wen, Ziqi and Zhao, Jie and Zhao, Wanqing and Yu, Jinlong and Chen, Haishun and Guan, Ziyu and Zhao, Wei},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
   year={2025},
-  publisher={Elsevier}
+  organization={ACM}
 }
-```
 
-## 🎈 Usage
----
+⚙️ Requirements
 
-**Requirements**
+Python 3.8+
 
-+ python 3.8
-+ numpy 1.23
-+ pytorch 1.12
-+ scikit-learn 1.2
+torch==2.1.0
 
-**Running**
+torchvision==0.16.0
 
-Extracting domain feature:
-```bash
-cd dataset/eeg/preprocessing/ && matlab  -nodesktop -nosplash -r preprocessing_data.m
-```
+numpy==1.26.0
 
-Processing domain feature:
-```bash
-python preprocess.py
-```
+pandas==2.2.3
+
+scikit-learn==1.6.0
+
+matplotlib==3.10.0
+
+You can install all dependencies with:
+
+pip install -r requirements.txt
+
+📊 Datasets
+
+We use several benchmark multi-view datasets from:
+👉 https://github.com/YilinZhang107/Multi-view-Datasets
+
+🚀 Usage
 
 Training and validating:
-```bash
+
 python main.py
-```
+
+
+You can modify configuration files in ./configs/ to specify dataset, model, and training parameters.
+
+💡 Acknowledgement
+
+Part of the dataset processing and evaluation pipeline follows
+Multi-view-Datasets
+.
+We sincerely thank the authors for sharing their code and datasets.
 
 ## ⭐ Preprocessing Procedure for EML using the CHB-MIT Dataset
 ---
